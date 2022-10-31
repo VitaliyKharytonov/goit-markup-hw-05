@@ -17,17 +17,18 @@
       rel="stylesheet"
     />
   </head>
-  
-  <body>
 
+  <body>
     <!--Шапка-->
 
     <header class="hat">
       <div class="container">
         <nav class="site-nav">
-          <a class="logo" href="/"><span class="logo-text">Web</span>Studio</a>
+          <a class="logo" href="./"><span class="logo-text">Web</span>Studio</a>
           <ul class="hat-list">
-            <li class="item activ"><a class="link activ" href="./index.html">Студія</a></li>
+            <li class="item activ">
+              <a class="link activ" href="./index.html">Студія</a>
+            </li>
             <li class="item">
               <a class="link" href="./portfolio.html">Портфоліо</a>
             </li>
@@ -61,7 +62,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -395,9 +398,7 @@
     <footer class="footer">
       <div class="footer-box container">
         <div class="contact">
-          <a class="link" href="./index.html">
-            <span class="logo">Web</span>Studio
-          </a>
+          <a class="link" href="./"> <span class="logo">Web</span>Studio </a>
           <address class="address">
             <ul class="address-list">
               <li class="item">
@@ -449,5 +450,14 @@
         </div>
       </div>
     </footer>
+    <!-- модалка -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <img src="./images/close.png" alt="Закрити" />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
