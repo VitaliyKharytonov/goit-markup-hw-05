@@ -312,7 +312,7 @@ img {
 
 .work-list .item {
   position: relative;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 2*30px) / 3);
 }
 
 .work-list .text {
@@ -333,9 +333,6 @@ img {
 /* стиль секції команда */
 
 .comand {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--comand-fone-color);
 }
 
@@ -457,9 +454,6 @@ img {
 
 .footer {
   display: flex;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--background-footer-color);
 }
 
@@ -728,11 +722,20 @@ img {
   top: 8px;
   right: 8px;
 
-  padding: 6px;
+  padding: 5px;
   width: 30px;
   height: 30px;
 
-  background: #ffffff;
+  color: #000000;
+  background-color: var(--auxiliary-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.modal-close:hover {
+  color: var(--hover-color);
+}
+
+.modal-image {
+  fill: currentColor;
 }
